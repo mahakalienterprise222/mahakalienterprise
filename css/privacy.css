@@ -1,0 +1,273 @@
+/* ============================================
+   PRIVACY PAGE — privacy.css
+   ============================================ */
+
+.privacy-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.privacy-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 6px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+}
+
+/* LAYOUT */
+.privacy-content-section {
+  padding: 60px 0 100px;
+}
+
+.privacy-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* TABLE OF CONTENTS */
+.privacy-toc {
+  position: sticky;
+  top: calc(var(--nav-height) + 24px);
+}
+
+.toc-inner {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.toc-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.toc-inner nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toc-link {
+  display: block;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+  line-height: 1.4;
+}
+
+.toc-link:hover,
+.toc-link.active {
+  color: var(--accent-1);
+  background: rgba(108,99,255,0.08);
+}
+
+/* POLICY BODY */
+.policy-intro {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-1);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  margin-bottom: 48px;
+}
+
+.policy-intro p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.policy-intro strong { color: var(--text-primary); }
+
+/* POLICY SECTION */
+.policy-section {
+  margin-bottom: 56px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--border);
+}
+
+.policy-section:last-of-type {
+  border-bottom: none;
+}
+
+.policy-section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.policy-num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.policy-section-header h2 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.policy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.policy-content p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.policy-content strong { color: var(--text-primary); }
+
+.policy-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 8px;
+  margin-bottom: -4px;
+}
+
+.policy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 0;
+}
+
+.policy-list li {
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.02);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid rgba(108,99,255,0.2);
+}
+
+.policy-list li::before {
+  content: '→';
+  color: var(--accent-1);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.policy-list li strong {
+  color: var(--text-primary);
+}
+
+/* HIGHLIGHT BOX */
+.policy-highlight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 22px;
+  background: rgba(108,99,255,0.08);
+  border: 1px solid rgba(108,99,255,0.2);
+  border-radius: var(--radius-md);
+}
+
+.policy-highlight span { font-size: 24px; flex-shrink: 0; }
+
+.policy-highlight p {
+  font-size: 14px !important;
+  color: var(--text-primary) !important;
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+/* CONTACT BLOCK */
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.contact-row span { font-size: 20px; flex-shrink: 0; }
+.contact-row strong { color: var(--text-primary); }
+
+/* POLICY LINK */
+.policy-link {
+  color: var(--accent-1);
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+.policy-link:hover { color: var(--accent-2); }
+
+/* POLICY FOOTER */
+.policy-footer {
+  text-align: center;
+  padding: 48px 0 0;
+}
+
+.policy-footer p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .privacy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-toc {
+    position: static;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .policy-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .policy-num { font-size: 28px; }
+}
