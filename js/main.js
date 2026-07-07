@@ -1,5 +1,5 @@
 /* ============================================
-   MAHAKALI ENTERPRISE 2 — MAIN JS
+   Mahakali Enterprise — MAIN JS
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
